@@ -1,0 +1,9 @@
+{
+  "name": "مطعم اسبيسى - القائمة الرقمية",
+  "short_name": "Spicy Menu",
+  "description": "قائمة طعام مطعم اسبيسى بالبدرشين - بيتزا إيطالي، كريب، سندوتشات، ووافل. اطلب الآن واستمتع بالطعم الذي له أصول.",
+  "theme_color": "#ff5f00",
+  "background_color": "#050505",
+  "display": "standalone",
+  "requestFramePermissions": []
+}
