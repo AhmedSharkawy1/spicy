@@ -4,10 +4,10 @@ import Header from './components/Header';
 import MenuSection from './components/MenuSection';
 import { MENU_DATA, ADDITIONS_DATA } from './constants';
 
-const SpicyLogo = ({ size = "w-20 h-20" }: { size?: string }) => (
-  <div className={`${size} relative flex items-center justify-center overflow-hidden rounded-full border-4 border-[#e31e24] shadow-2xl bg-white mb-4 transform hover:rotate-6 transition-all duration-500 hover:scale-110`}>
+const SpicyLogo = ({ size = "w-24 h-24" }: { size?: string }) => (
+  <div className={`${size} relative flex items-center justify-center overflow-hidden rounded-full border-4 border-[#e31e24] shadow-2xl bg-white mb-6 transform hover:rotate-12 transition-all duration-700 hover:scale-110 active:scale-95 cursor-pointer`}>
     <img 
-      src="https://i.postimg.cc/G2mXpXG0/image.png" 
+      src="https://i.postimg.cc/sXYt9mHh/Chat-GPT-Image-Jan-12-2026-10-41-14-AM.png" 
       alt="Spicy Logo" 
       className="w-full h-full object-contain p-2"
     />
@@ -117,7 +117,7 @@ const App: React.FC = () => {
     }
   };
 
-  const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(currentUrl)}&bgcolor=ffffff&color=cc0000`;
+  const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(currentUrl)}&bgcolor=ffffff&color=cc0000`;
   const mapsLink = "https://www.google.com/maps/search/مطعم+اسبيسى+البدرشين+بجوار+صيدلية+الظاهر";
 
   return (
@@ -176,7 +176,7 @@ const App: React.FC = () => {
             className={`absolute left-1.5 z-20 w-8 h-8 flex items-center justify-center bg-white/95 dark:bg-zinc-800/95 rounded-full shadow-lg border border-zinc-200 dark:border-white/10 transition-all duration-300 active:scale-90 ${canScrollLeft ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4 pointer-events-none'}`}
             aria-label="تمرير لليسار"
           >
-            <span className="text-red-600 font-bold text-sm">❮</span>
+            <span className="text-red-600 font-bold text-lg">❮</span>
           </button>
         </div>
       </nav>
@@ -244,7 +244,7 @@ const App: React.FC = () => {
                </p>
             </div>
 
-            <a href={mapsLink} target="_blank" rel="noopener noreferrer" className="w-full bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 shadow-xl border border-zinc-200 dark:border-white/10 text-right group active:scale-95 transition-all">
+            <a href={mapsLink} target="_blank" rel="noopener noreferrer" className="w-full bg-white dark:bg-zinc-900 rounded-[2.5rem] p-8 shadow-xl border border-zinc-200 dark:border-white/10 text-right group active:scale-95 transition-all hover:border-red-600/40">
                <div className="flex flex-col gap-4">
                   <div className="flex items-start gap-6">
                     <div className="w-16 h-16 bg-red-50 dark:bg-red-900/20 rounded-3xl flex items-center justify-center text-3xl border border-red-100 dark:border-red-900/30 group-hover:bg-red-600 group-hover:text-white transition-all duration-500 shadow-sm group-hover:shadow-red-600/30">📍</div>

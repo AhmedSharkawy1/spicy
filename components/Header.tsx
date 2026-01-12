@@ -7,16 +7,12 @@ interface Props {
   onAction?: () => void;
 }
 
-const SpicyLogo = ({ size = "w-14 h-14" }: { size?: string }) => (
-  <div className={`${size} relative flex items-center justify-center overflow-hidden rounded-full border-2 border-[#e31e24] shadow-xl bg-white`}>
+const SpicyLogo = ({ size = "w-16 h-16" }: { size?: string }) => (
+  <div className={`${size} relative flex items-center justify-center overflow-hidden rounded-full border-2 border-[#e31e24] shadow-xl bg-white transition-transform group-hover:rotate-12 duration-500`}>
     <img 
-      src="https://i.postimg.cc/G2mXpXG0/image.png" 
+      src="https://i.postimg.cc/sXYt9mHh/Chat-GPT-Image-Jan-12-2026-10-41-14-AM.png" 
       alt="Spicy Logo" 
       className="w-full h-full object-contain p-1"
-      onError={(e) => {
-        // Fallback in case direct link changes
-        (e.target as HTMLImageElement).src = 'https://i.ibb.co/VWVXf1Y/logo.png';
-      }}
     />
   </div>
 );
